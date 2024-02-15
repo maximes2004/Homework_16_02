@@ -1,0 +1,117 @@
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+    font-family: Open Sans;
+    background-color: #020a18;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #040c1a;
+    margin-bottom: 20px;
+}
+
+header .menu_container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+
+}
+
+header .menu_container a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+main {
+    width: 1146px;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+main .text_rocket {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 150px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
+}
+
+main .text_rocket .text_ai h5 {
+    text-transform: uppercase;
+    color: #3A68B8;
+    font-size: 18px;
+}
+
+main .text_rocket .text_ai h1 {
+    color: white;
+    font-size: 55px;
+    font-weght: 800;
+}
+
+main .text_rocket .text_ai p {
+    color: white;
+    font-size: 18px;
+    font-weght: 600;
+    margin-top: 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main .text_rocket .text_ai button {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #3A68B8;
+    padding: 16px 32px;
+    margin-top: 40px;
+    border: 0;
+}
+
+.btn_play {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.text_ai button img {
+    width: 27px;
+    height: 26px;
+}
+
+main .text_rocket .img {
+    width: 415px;
+    height: 415px;
+    min-width: 415px;
+    min-height: 415px;
+}
+
+main .text_rocket .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo_group {
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
