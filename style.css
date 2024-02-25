@@ -5,23 +5,24 @@ margin: 0;
 
 body {
     font-family: Open Sans;
-    background-color: #020a18;
 }
 
 header {
     height: 100px;
     width: 100%;
-    background-color: #040c1a;
-    margin-bottom: 20px;
+    background-color: #08101d;
+    padding-bottom: 20px;
 }
 
 header .menu_container {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 1146px;
+    max-width: 100vw;
     justify-content:center;
     align-items: center;
-
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 header .menu_container a {
@@ -33,19 +34,37 @@ header .menu_container a {
 }
 
 main {
-    width: 1146px;
-    padding-top: 60px;
+    width: 100%;
     margin: 0 auto;
 }
 
-main .text_rocket {
-    display: flex;
+section {
     width: 100%;
+}
+
+section>div {
+    width: 1146px;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.text_rocket {
+    background-color: #08101d;
+    padding-top: 60px;
+}
+
+.text_rocket>div {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
-    gap: 150px;
+    gap: 128px;
     padding-top: 80px;
-    padding-bottom: 80px;
-    margin-bottom: 20px;
+    padding-bottom: 199px;
+    flex-wrap: wrap;
+}
+
+.text_rocket .text_ai {
+    max-width: 604px;
 }
 
 main .text_rocket .text_ai h5 {
@@ -58,30 +77,36 @@ main .text_rocket .text_ai h1 {
     color: white;
     font-size: 55px;
     font-weght: 800;
+    margin-bottom: 40px;
 }
 
 main .text_rocket .text_ai p {
     color: white;
     font-size: 18px;
-    font-weght: 600;
-    margin-top: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    line-height: 28.8px;
 }
 
-.buttons {
+.text_rocket .buttons {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-main .text_rocket .text_ai button {
+button {
     color: white;
-    font-size: 20px;
-    font-weight: 600;
     border-radius: 5px;
     background-color: #3A68B8;
     padding: 16px 32px;
-    margin-top: 40px;
     border: 0;
+    cursor: pointer;
+    min-height: 58px;
+}
+
+.text_rocket button {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .btn_play {
@@ -97,10 +122,8 @@ main .text_rocket .text_ai button {
 }
 
 main .text_rocket .img {
-    width: 415px;
-    height: 415px;
-    min-width: 415px;
-    min-height: 415px;
+    max-width: 414px;
+    max-height: 415px;
 }
 
 main .text_rocket .img img {
@@ -109,9 +132,140 @@ main .text_rocket .img img {
 }
 
 .logo_group {
+    background-color: #08101d;
+}
+
+.logo_group>div {
     display: flex;
     flex-direction: row;
-    gap: 72px;
+    gap: 71px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 99px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.brain {
+    background-color: #020a18;
+}
+
+.brain>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 68px;
+    padding-top: 157px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.brain .img {
+    max-width: 594px;
+    max-height: 548px;
+}
+
+.brain .img img {
+    width: 100%;
+    height: 100%; 
+}
+
+.brain .text_ai {
+    max-width: 484px;
+}
+
+.brain h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.brain p {
+    color: #b8bcc2;
+    font-size: 16px;
+    line-height: 25.6px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.brain button {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tile {
+    background-color: #020a18;
+    padding-top: 164px;
+    margin-bottom: 0;
+}
+
+.tile>div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px;
+}
+
+.grid-cell {
+    background-color: #132035;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.tile .big {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.tile .img {
+    max-width: 98px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.tile .big .img {
+    max-width: 306px;
+    margin-bottom: 60px;
+}
+
+.tile .big img {
+    width: 306px;
+}
+
+.tile h4 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31.25px;
+    text-align: center;
+    color: #b8bcc2;
+    margin-bottom: 30px;
+}
+
+.tile .big h4 {
+    margin-bottom: 60px;   
+}
+
+.tile p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px;
+    text-align: center;
+    color: #b8bcc2;
+}
+
+@media (max-width: 1145px) {
+    .tile>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tile>div>div:nth-child(n+4) {
+        display: none;
+    }
+  }
