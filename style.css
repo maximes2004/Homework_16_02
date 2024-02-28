@@ -67,21 +67,21 @@ section>div {
     max-width: 604px;
 }
 
-main .text_rocket .text_ai h5 {
+.text_rocket .text_ai h5 {
     text-transform: uppercase;
     color: #3A68B8;
     font-size: 18px;
 }
 
-main .text_rocket .text_ai h1 {
+.text_rocket .text_ai h1 {
     color: white;
     font-size: 55px;
     font-weght: 800;
     margin-bottom: 40px;
 }
 
-main .text_rocket .text_ai p {
-    color: white;
+.text_rocket .text_ai p {
+    color: #b8bcc2;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -121,12 +121,12 @@ button {
     height: 26px;
 }
 
-main .text_rocket .img {
+.text_rocket .img {
     max-width: 414px;
     max-height: 415px;
 }
 
-main .text_rocket .img img {
+.text_rocket .img img {
     width: 100%;
     height: 100%;
 }
@@ -268,4 +268,181 @@ main .text_rocket .img img {
     .tile>div>div:nth-child(n+4) {
         display: none;
     }
-  }
+}
+
+.wall_screen {
+    background-color: #020a18;
+    padding-top: 243px;
+    padding-bottom: 221px;
+}
+
+.wall_screen>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.wall_screen .text_ai {
+    max-width: 548px;
+}
+
+.wall_screen .text_ai h2 {
+    color: white;
+    font-size: 40px;
+    font-weght: 700;
+    line-height: 52px;
+    margin-bottom: 40px;
+}
+
+.wall_screen .text_ai p {
+    color: #b8bcc2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px;
+    display: inline-block;
+    max-width: 460px;
+}
+
+.wall_screen .text_ai p:nth-child(2),
+.wall_screen .text_ai p:nth-child(3),
+.wall_screen .text_ai p:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.wall_screen .img {
+    max-width: 573px;
+    max-height: 492px;
+}
+
+.wall_screen .img img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: #08101d;
+    padding-bottom: 46px;
+    padding-top: 48px;
+}
+
+footer .footer_container {
+    display: flex;
+    height: 100%;
+    width: 1146px;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+footer .footer_container>div {
+    width: 362px;
+    max-width: 100vw;
+    min-height: 156px;
+}
+
+footer .footer_container h4 {
+    color: white;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+
+footer .footer_left>div>div {
+    max-height: 16.4px;
+}
+
+footer .footer_left>div>div a,
+footer .footer_left>div>div span {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+footer .footer_left div>div:nth-child(1),
+footer .footer_left div>div:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+footer .footer_container a,
+footer .footer_container .adress span {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 16.4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+footer .footer_container .footer_center p {
+    color: #b8bcc2;
+    font-size: 14px;
+    line-height: 16.4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+footer .footer_container .social {
+    display: flex;
+    font-display: row;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 24px;
+}
+
+footer .footer_container .email a::before {
+    content: '';
+    display: inline-block;
+    background-image: url("img/mail.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 11px;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+
+footer .footer_container .tel a::before {
+    content: '';
+    display: inline-block;
+    background-image: url("img/tel.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer .footer_container .adress span::before {
+    content: '';
+    display: inline-block;
+    background-image: url("img/adress.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer .footer_right .site {
+    max-height: 16.4px;
+    margin-bottom: 24px;
+}
+
+footer .footer_right .site a {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
