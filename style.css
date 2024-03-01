@@ -18,7 +18,7 @@ header .menu_container {
     display: flex;
     height: 100%;
     width: 1146px;
-    max-width: 100vw;
+    max-width: calc(100vw - 80px);
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ section {
 
 section>div {
     width: 1146px;
-    max-width: 100vw;
+    max-width: calc(100vw - 80px);
     margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ section>div {
 .text_rocket .text_ai h1 {
     color: white;
     font-size: 55px;
-    font-weght: 800;
+    font-weight: 800;
     margin-bottom: 40px;
 }
 
@@ -292,7 +292,7 @@ button {
 .wall_screen .text_ai h2 {
     color: white;
     font-size: 40px;
-    font-weght: 700;
+    font-weight: 700;
     line-height: 52px;
     margin-bottom: 40px;
 }
@@ -333,7 +333,7 @@ footer .footer_container {
     display: flex;
     height: 100%;
     width: 1146px;
-    max-width: 100vw;
+    max-width: calc(100vw - 80px);
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -343,7 +343,7 @@ footer .footer_container {
 
 footer .footer_container>div {
     width: 362px;
-    max-width: 100vw;
+    max-width: calc(100vw - 80px);
     min-height: 156px;
 }
 
@@ -445,4 +445,86 @@ footer .footer_right .site a {
     display: inline-block;
     height: 100%;
     vertical-align: top;
+}
+
+@media (max-width: 849px) {
+    .text_rocket .text_ai,
+    .brain .text_ai,
+    .wall_screen .text_ai {
+        max-width: calc(100vw - 40px);
+    }
+}
+
+@media (min-width: 377px) and (max-width: 1225px) {
+    .text_rocket>div {
+        padding-bottom: 80px;
+        gap: 80px;
+    }
+    .logo_group>div {
+        gap: 32px;
+        padding-top: 80px;
+
+    }
+    .tile {
+        padding-bottom: 80px;
+    }
+    .wall_screen {
+        padding-top: 80px; 
+        padding-bottom: 160px;
+    }
+    .wall_screen>div {
+        gap: 68px;
+    }
+    footer .footer_container {
+        gap: 50px;
+    }
+    footer .footer_container .footer_center {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 376px) {
+    .text_rocket>div {
+        padding-top: 0;
+        padding-bottom: 80px;
+        gap: 80px;
+    }
+    .logo_group>div {
+        gap: 32px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .brain>div {
+        padding-top: 20px; 
+        padding-bottom: 40px;
+    }
+    .tile {
+        padding-top: 40px;
+    }
+    .wall_screen {
+        padding-top: 40px;  
+        padding-bottom: 40px;
+    }
+    footer .footer_container {
+        gap: 50px;
+    }
+    footer .footer_container .footer_center {
+        min-height: 0;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 425px) {
+    header .menu_container,
+    section>div,
+    footer .footer_container {
+        max-width: calc(100vw - 40px);
+    }
+}
+
+@media (max-width: 350px) {
+    header .menu_container,
+    section>div,
+    footer .footer_container {
+        max-width: calc(100vw - 20px);
+    }
 }
